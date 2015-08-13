@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<title>Mi juego</title>
+
+<!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+ 
+ <!-- Principal -->
+ <div data-role="page" id="principal" >   
+  <div data-role="header">
+    <h1>Ejercicio 4</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <div>
+    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Jugar</a>
+    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Opciones</a>
+    <a href="#Puntaje" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Puntaje</a>
+    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Acerca de...</a>
+    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Ayuda</a>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>Erika Ramirez Melchor</h1>
+  </div>
+ </div>  
+ <!-- Principal -->
+
+ <!-- opciones -->
+ <div data-role="page" id="Pagina_2" >   
+   
+  <div data-role="main" class="ui-content">
+  <p>Sonido</p>
+  <p>Vibracion</p>
+  
+     <div data-role="controlgroup" data-type="horizontal">
+<a href="#principal" data-role="button" data-inline="true" data-icon="back" data-iconpos="right" id="principal">Guardar</a>
+<a href="#principal" data-role="button" data-inline="true" data-icon="back" data-iconpos="right" id="principal">Cancelar</a>
+</div>
+  </div>
+
+  <div data-role="footer">
+    <h1>Erika Ramirez Melchor</h1>
+  </div>
+ </div>  
+ <!-- opciones -->
+ 
+  <!-- Puntaje -->
+ <div data-role="page" id="Puntaje" >   
+  <div data-role="header">
+    <h1>Pagina 3</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <div>
+  <div style="float:left; width:20%; border:1px solid #0CF" align="center">
+  <p>Lugar</p>
+  </div>
+  <div style="float:left; width:50%; border:1px solid #00F" align="center">
+  <p>Nombre</p>
+  </div>
+  <div style="float:left; width:20%; border:1px solid #96F" align="center">
+  <p>Puntaje</p>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="footer" align="right">
+    <h1>Erika Ramirez Melchor</h1>
+  </div>
+ </div>  
+ <!-- Puntaje -->
+
+</body>
+</html>
