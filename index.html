@@ -6,7 +6,7 @@
 <title>Mi juego</title>
 
 <!--grupo CSS-->
-  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/team.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
         
@@ -23,18 +23,18 @@
  <!-- Principal -->
  <div data-role="page" id="principal" >   
   <div data-role="header">
-    <h1>Ejercicio 4</h1>
+    <h1>Ahorcado</h1>
   </div>
-
+  <center><img src="../../descarga (2).png" width="261" ></center>
   <div data-role="main" class="ui-content">
-  <div>
-    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Jugar</a>
-    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Opciones</a>
+    <div data-role="controlgroup">
+    <a href="#jugar" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Jugar</a>
+    <a href="#opciones" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Opciones</a>
     <a href="#Puntaje" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Puntaje</a>
-    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Acerca de...</a>
-    <a href="#Pagina_2" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Ayuda</a>
+    <a href="#Acerca" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Acerca de...</a>
+    <a href="#Ayuda" class="ui-btn ui-btn-corner-all ui-icon-alert ui-btn-icon-right">Ayuda</a>
     </div>
-  </div>
+</div>
 
   <div data-role="footer">
     <h1>Erika Ramirez Melchor</h1>
@@ -43,18 +43,28 @@
  <!-- Principal -->
 
  <!-- opciones -->
- <div data-role="page" id="Pagina_2" >   
-   
-  <div data-role="main" class="ui-content">
-  <p>Sonido</p>
-  <p>Vibracion</p>
-  
-     <div data-role="controlgroup" data-type="horizontal">
-<a href="#principal" data-role="button" data-inline="true" data-icon="back" data-iconpos="right" id="principal">Guardar</a>
-<a href="#principal" data-role="button" data-inline="true" data-icon="back" data-iconpos="right" id="principal">Cancelar</a>
-</div>
+ <div data-role="page" id="opciones" >   
+   <div data-role="header">
+    <h1>Opciones</h1>
+  <a href="#principal" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-right">Regresar</a>
   </div>
-
+  
+  <div align="center">
+  <div data-role="main" class="ui-content">
+  <div style="width:20%; border:1px" align="center">
+  <a href="#" id="btn_sonido" class="ui-btn ui-btn-corner-all ui-icon-audio ui-btn-icon-right ui-btn-inline">sonido</a>
+  </div>
+  
+  <div style="width:20%; border:1px" align="center">
+  <a href="#" id="btn_vibrar" class="ui-btn ui-btn-corner-all ui-icon-power ui-btn-icon-right ui-btn-inline">vibrar</a>
+  </div>
+  </div>
+  
+     <div data-type="horizontal">
+<a href="#principal" data-role="button" data-inline="true" data-icon="check" data-iconpos="right" id="principal">Guardar</a>
+<a href="#principal" data-role="button" data-inline="true" data-icon="delete" data-iconpos="right" id="principal">Cancelar</a>
+</div>
+  
   <div data-role="footer">
     <h1>Erika Ramirez Melchor</h1>
   </div>
@@ -64,7 +74,8 @@
   <!-- Puntaje -->
  <div data-role="page" id="Puntaje" >   
   <div data-role="header">
-    <h1>Pagina 3</h1>
+    <h1>Puntaje</h1>
+     <a href="#principal" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-right">Regresar</a>
   </div>
 
   <div data-role="main" class="ui-content">
@@ -87,5 +98,42 @@
  </div>  
  <!-- Puntaje -->
 
+<!-- Acerca de -->
+ <div data-role="page" id="Acerca" >   
+   <div data-role="header">
+    <h1>Acerca de...</h1>
+     <a href="#principal" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-right">Regresar</a>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <p>Creador:<br>
+         Erika Ramirez Melchor</p>
+  <p>Objetivo:
+  </p>
+</div>
+
+  <div data-role="footer">
+    <h1>Erika Ramirez Melchor</h1>
+  </div>
+ </div>  
+ <!-- aciones de -->
+ 
+ <!-- Ayuda -->
+ <div data-role="page" id="Ayuda" >   
+   <div data-role="header">
+    <h1>Ayuda</h1>
+     <a href="#principal" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-right">Regresar</a>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <p>Ayuda</p>
+ </div>
+
+  <div data-role="footer">
+    <h1>Erika Ramirez Melchor</h1>
+  </div>
+ </div>  
+ <!-- Ayuda -->
+ 
 </body>
 </html>
